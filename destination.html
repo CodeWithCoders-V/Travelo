@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Destinations</title>
+    <link rel="stylesheet" href="destinations.css">
+</head>
+<body>
+
+    <header>
+        <h1>Explore Your Next Destination</h1>
+        <div class="search-container">
+            <input type="text" id="searchBox" placeholder="Search for a destination..." onkeyup="filterDestinations()">
+        </div>
+    </header>
+
+    <div class="destinations-container">
+        <div class="destination" data-name="paris">
+            <img src="images/dubai.jpeg" alt="Paris">
+            <h3>Paris, France</h3>
+            <p>Experience the romance of the Eiffel Tower and exquisite French cuisine.</p>
+            <button class="explore-btn">Explore More</button>
+        </div>
+
+        <div class="destination" data-name="bali">
+            <img src="images/bali.jpg" alt="Bali">
+            <h3>Bali, Indonesia</h3>
+            <p>Relax on the beautiful beaches and explore the rich Balinese culture.</p>
+            <button class="explore-btn">Explore More</button>
+        </div>
+
+        <div class="destination" data-name="tokyo">
+            <img src="images/kerala.webp" alt="Tokyo">
+            <h3>Tokyo, Japan</h3>
+            <p>Discover the futuristic cityscapes and traditional temples of Tokyo.</p>
+            <button class="explore-btn">Explore More</button>
+        </div>
+
+        <div class="destination" data-name="new york">
+            <img src="images/New Zeland.png" alt="New York">
+            <h3>New York, USA</h3>
+            <p>Enjoy the vibrant energy of Times Square and Central Park.</p>
+            <button class="explore-btn">Explore More</button>
+        </div>
+
+        <div class="destination" data-name="santorini">
+            <img src="images/greece.jpeg" alt="Santorini">
+            <h3>Santorini, Greece</h3>
+            <p>Marvel at the stunning blue and white architecture overlooking the sea.</p>
+            <button class="explore-btn">Explore More</button>
+        </div>
+
+        <div class="destination" data-name="switzerland">
+            <img src="images/thiland.jpeg" alt="Switzerland">
+            <h3>Switzerland</h3>
+            <p>Experience breathtaking alpine scenery and world-class skiing.</p>
+            <button class="explore-btn">Explore More</button>
+        </div>
+
+        <div class="destination" data-name="maldives">
+            <img src="images/maldives.jpg" alt="Maldives">
+            <h3>Maldives</h3>
+            <p>Escape to paradise with crystal-clear waters and luxurious resorts.</p>
+            <button class="explore-btn">Explore More</button>
+        </div>
+
+        <div class="destination" data-name="dubai">
+            <img src="images/dubai.jpeg" alt="Dubai">
+            <h3>Dubai, UAE</h3>
+            <p>Experience luxury shopping, skyscrapers, and desert safaris.</p>
+            <button class="explore-btn">Explore More</button>
+        </div>
+
+        <div class="destination" data-name="sydney">
+            <img src="images/vietnam.jpeg" alt="Sydney">
+            <h3>Sydney, Australia</h3>
+            <p>Visit the iconic Sydney Opera House and beautiful beaches.</p>
+            <button class="explore-btn">Explore More</button>
+        </div>
+
+        <div class="destination" data-name="rome">
+            <img src="images/thiland.jpeg" alt="Rome">
+            <h3>Rome, Italy</h3>
+            <p>Explore ancient ruins and indulge in authentic Italian cuisine.</p>
+            <button class="explore-btn">Explore More</button>
+        </div>
+    </div>
+
+    <script>
+        function filterDestinations() {
+            let input = document.getElementById('searchBox').value.toLowerCase();
+            let destinations = document.querySelectorAll('.destination');
+
+            destinations.forEach(dest => {
+                let name = dest.getAttribute('data-name');
+                if (name.includes(input)) {
+                    dest.style.display = "block";
+                } else {
+                    dest.style.display = "none";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>

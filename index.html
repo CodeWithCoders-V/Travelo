@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <!-- Page Loader -->
+    <div id="page-loader" class="loader">
+      <div class="spinner"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="#" class="logo">Travelo</a>
+        <ul class="navbar-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="destination.html">Destinations</a></li>
+          <li><a href="wish.html">Wishlist</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" onclick="toggleNavbar()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="travel-card">
+        <div class="hanger"></div>
+        <div class="content">
+          <h2 class="month">JANUARY</h2>
+          <div class="glass"></div>
+          <img src="images/dubai.jpeg" alt="Dubai" />
+          <div class="details">
+            <h3>Dubai</h3>
+            <button>Explore More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="travel-card">
+        <div class="hanger"></div>
+        <div class="content">
+          <h2 class="month">FEBRUARY</h2>
+          <div class="glass"></div>
+          <img src="images/New Zeland.png" alt="Australia" />
+          <div class="details">
+            <h3>Australia & New Zealand</h3>
+            <button>Explore More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="travel-card">
+        <div class="hanger"></div>
+        <div class="content">
+          <h2 class="month">MARCH</h2>
+          <div class="glass"></div>
+          <img src="images/rajasthan.jpg" alt="Rajasthan" />
+          <div class="details">
+            <h3>Rajasthan</h3>
+            <button>Explore More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="travel-card">
+        <div class="hanger"></div>
+        <div class="content">
+          <h2 class="month">APRIL</h2>
+          <div class="glass"></div>
+          <img src="images/bali.jpg" alt="Bali" />
+          <div class="details">
+            <h3>Bali</h3>
+            <button>Explore More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="travel-card">
+        <div class="hanger"></div>
+        <div class="content">
+          <h2 class="month">MAY</h2>
+          <div class="glass"></div>
+          <img src="images/south india.jpg" alt="South India" />
+          <div class="details">
+            <h3>South India</h3>
+            <button>Explore More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="travel-card">
+        <div class="hanger"></div>
+        <div class="content">
+          <h2 class="month">JUNE</h2>
+          <div class="glass"></div>
+          <img src="images/goa.jpeg" alt="goa" />
+          <div class="details">
+            <h3>Goa</h3>
+            <button>Explore More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="travel-card">
+        <div class="hanger"></div>
+        <div class="content">
+          <h2 class="month">JULY</h2>
+          <div class="glass"></div>
+          <img src="images/kerala.webp" alt="kerala" />
+          <div class="details">
+            <h3>Kerala</h3>
+            <button>Explore More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="travel-card">
+        <div class="hanger"></div>
+        <div class="content">
+          <h2 class="month">AUGUST</h2>
+          <div class="glass"></div>
+          <img src="images/greece.jpeg" alt="greece" />
+          <div class="details">
+            <h3>Greece</h3>
+            <button>Explore More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="travel-card">
+        <div class="hanger"></div>
+        <div class="content">
+          <h2 class="month">SEPTEMBER</h2>
+          <div class="glass"></div>
+          <img src="images/malaysia.jpg" alt="malaysia" />
+          <div class="details">
+            <h3>Malaysia</h3>
+            <button>Explore More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="travel-card">
+        <div class="hanger"></div>
+        <div class="content">
+          <h2 class="month">OCTOBER</h2>
+          <div class="glass"></div>
+          <img src="images/maldives.jpg" alt="maldives" />
+          <div class="details">
+            <h3>Maldives</h3>
+            <button>Explore More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="travel-card">
+        <div class="hanger"></div>
+        <div class="content">
+          <h2 class="month">NOVEMBER</h2>
+          <div class="glass"></div>
+          <img src="images/thiland.jpeg" alt="thiland" />
+          <div class="details">
+            <h3>Thiland</h3>
+            <button>Explore More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="travel-card">
+        <div class="hanger"></div>
+        <div class="content">
+          <h2 class="month">DECEMBER</h2>
+          <div class="glass"></div>
+          <img src="images/vietnam.jpeg" alt="vietnam" />
+          <div class="details">
+            <h3>Vietnam</h3>
+            <button>Explore More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleNavbar() {
+        const navbarLinks = document.querySelector(".navbar-links");
+        navbarLinks.classList.toggle("active");
+      }
+
+    // Show loader on page load
+    window.addEventListener('load', function() {
+        // Wait a few seconds before hiding the loader to simulate slow loading if required
+        setTimeout(function() {
+            const loader = document.getElementById('page-loader');
+            loader.style.visibility = 'hidden';
+        }, 2000); // Adjust this timeout as necessary (in milliseconds)
+    });
+
+    // Optionally, you can show the loader if the internet is slow, using the "navigator.connection" API
+    if (navigator.connection) {
+        const connection = navigator.connection;
+        if (connection.downlink < 1.5) { // Slow network speed (adjust as necessary)
+            document.getElementById('page-loader').style.visibility = 'visible';
+        }
+    }
+
+    </script>
+  </body>
+</html>

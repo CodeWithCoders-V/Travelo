@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('images/bg4.avif') no-repeat center center fixed;
+    background-size: cover;
+    margin-left: 60px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Container */
+.container {
+    background: rgba(209, 250, 95, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(2px);
+    padding: 30px;
+    text-align: center;
+    width: 550px;
+    box-shadow: 0px 0px 10px rgba(206, 43, 43, 0.2);
+}
+
+/* Heading */
+h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+.input-group {
+    position: relative;
+    margin-bottom: 25px;
+    margin-right: 20px;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    color: #fff;
+    resize: none;
+    outline: none;
+}
+
+.input-group textarea {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    min-height: 120px;
+    border-radius: 5px;
+    color: #fff;
+    resize: none;
+    outline: none;
+}
+
+.input-group label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: rgba(255, 255, 255, 0.7);
+    transition: 0.3s;
+}
+
+.input-group input:focus ~ label, .input-group textarea:focus ~ label,
+.input-group input:valid ~ label, .input-group textarea:valid ~ label {
+    top: -13px;
+    left: 10px;
+    font-size: 12px;
+    color: #fff;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #ff6b81;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff4757;
+}
+
+/* Google Map */
+.map {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Social Media */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 40px;
+    height: 30px;
+    transition: 0.3s;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
